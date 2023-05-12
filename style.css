@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --clr-text: #f37920;
+  --clr-card-1: #68ce8c1a;
+  --clr-card-2: #fdc4751a;
+  --clr-bg-dashboard: #212b36;
+
+  /* fontsize */
+  --fs-dashboard-text: 16px;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+
+/* UTILITY CLASSES */
+
+.flex-direction {
+  display: flex;
+  flex-direction: column; /* needed by box-1-items, card-1,2,3, dashboard-box-1 */
+}
+.border {
+  border: 2px solid rgba(0, 0, 0, 0.09);
+  border-radius: 8px; /* needed by box-1, card-1,2,3, dashboard-box-1, dashboard-box-2, box-2-sub, dashboard-box-3, box-3-sub*/
+}
+.font-size-small {
+  font-size: 1.4rem;
+}
+.color-grey {
+  color: grey; /* needed */
+}
+.overlay {
+  background-color: rgba(255, 255, 255, 0.107);
+}
+.flex {
+  display: flex; /* needed by section, item-1,2,3,4, dashboard-cards  */
+}
+.justify-content {
+  justify-content: center; /*  needed by box-1-items, item-1,2,3,4*/
+}
+.grid {
+  display: grid;
+}
+.tangerine {
+  color: var(
+    --clr-text
+  ); /* needed by item-1, card-2-stat, box-2-employee, employee-name*/
+}
+.white-color {
+  color: #fff;
+}
+section {
+  height: 100vh;
+  gap: 3rem;
+  padding: 3rem;
+}
+.box-1 {
+  width: 15vw;
+  background-color: var(--clr-bg-dashboard);
+  grid-template-rows: auto 1fr auto;
+}
+.box-1-items {
+  gap: 3rem;
+  margin-top: 3rem;
+}
+.item-1 {
+  padding: 1rem;
+}
+.item-4 {
+  margin-top: auto;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  gap: 1rem;
+  margin-left: 2rem;
+  border-radius: 5px;
+  margin-right: 2rem;
+  padding: 0.8rem;
+}
+
+.item-1,
+.item-2,
+.item-3 {
+  align-items: center;
+  gap: 1rem;
+  font-size: var(--fs-dashboard-text);
+}
+.ornate-logo {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.box-2 {
+  width: 85vw;
+}
+
+.dashboard-date {
+  margin-top: 2px;
+}
+.dashboard-cards {
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  height: 15vh;
+  gap: 1rem;
+  padding: 1rem 0 0 1rem;
+  font-weight: 500;
+}
+.card-1 {
+  flex-basis: 320px;
+  background-color: rgba(0, 128, 0, 0.136);
+}
+.card-2 {
+  flex-basis: 320px;
+  background-color: rgba(0, 0, 255, 0.206);
+}
+.card-3 {
+  flex-basis: 490px;
+  background-color: rgba(255, 166, 0, 0.219);
+}
+
+.card-data {
+  font-size: 1.8rem;
+}
+.card-stat {
+  color: green;
+}
+.card-stat-1 {
+  color: blue;
+}
+
+.dashboard-boxes {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+  margin-top: 2rem;
+}
+.dashboard-box-1 {
+  grid-column: 1;
+  grid-row: 1;
+  height: 20vh;
+  border-radius: 8px;
+  width: 650px;
+  padding: 1rem;
+  justify-content: space-around;
+}
+.box-title {
+  font-size: 1.8rem;
+}
+.box-desp {
+  font-size: 4rem;
+}
+.employee-stat-men {
+  margin-top: 0.5rem;
+}
+
+.dashboard-box-2 {
+  grid-column: 1;
+  grid-row: 2;
+  height: 46vh;
+  width: 650px;
+  padding: 10px;
+}
+.box-2-title {
+  font-size: 1.5rem;
+}
+.box-2-sub {
+  background-color: rgba(128, 128, 128, 0.025);
+  padding: 0.4rem;
+  margin-top: 1rem;
+}
+
+.birthday-tag {
+  color: black;
+}
+.box-2-date {
+  margin-top: 0.4rem;
+}
+.dashboard-box-3 {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  padding: 1rem;
+}
+.box-3-title {
+  font-size: 1.8rem;
+}
+.box-3-sub {
+  background-color: rgba(128, 128, 128, 0.025);
+  padding: 1rem;
+  margin-top: 0.8rem;
+}
+.box-3-desc {
+  margin-bottom: 0.3rem;
+}
