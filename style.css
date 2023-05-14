@@ -110,9 +110,9 @@ section {
 .card-1,
 .card-2,
 .card-3 {
-  height: 15vh;
+  /* height: 15vh; */
   gap: 1rem;
-  padding: 1rem 0 0 1rem;
+  padding: 1rem 0 1.5rem 1rem;
   font-weight: 500;
 }
 .card-1 {
@@ -147,9 +147,9 @@ section {
 .dashboard-box-1 {
   grid-column: 1;
   grid-row: 1;
-  height: 20vh;
+  /* height: 20vh; */
   border-radius: 8px;
-  width: 650px;
+  min-width: 650px;
   padding: 1rem;
   justify-content: space-around;
 }
@@ -169,6 +169,7 @@ section {
   height: 46vh;
   width: 650px;
   padding: 10px;
+  overflow-y: scroll;
 }
 .box-2-title {
   font-size: 1.5rem;
